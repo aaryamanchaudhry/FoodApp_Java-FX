@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="648.0" prefWidth="952.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment1_aaryaman_chaudhry.FXMLReceiptController">
+   <children>
+      <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="175.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/512.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="17.0" layoutY="10.0" opacity="0.56" style="-fx-background-color: black; -fx-font-weight: bold;" text="Ramsay's Kitchen" textFill="#00bcdd">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="739.0" layoutY="14.0" mnemonicParsing="false" onAction="#show1" prefHeight="60.0" prefWidth="167.0" style="-fx-background-color: black;" stylesheets="@css1.css" text="Go Home" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <StackPane layoutX="26.0" layoutY="52.0" prefHeight="78.0" prefWidth="86.0">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/advance5/coca-cola-logo-260x260.png" />
+               </image></ImageView>
+         </children>
+      </StackPane>
+      <StackPane layoutX="125.0" layoutY="55.0" prefHeight="78.0" prefWidth="86.0">
+         <children>
+            <ImageView fitHeight="74.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/advance5/diet-coke.hover-image.300%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="74.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/advance5/diet-coke.hover-image.300%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <ImageView fitHeight="74.0" fitWidth="75.0" layoutX="228.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/advance5/circle-coke-zero.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="75.0" layoutX="321.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/advance5/3_fanta_logo_2010.png" />
+         </image></ImageView>
+      <ImageView fitHeight="74.0" fitWidth="75.0" layoutX="410.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/advance5/SPRITE.png" />
+         </image></ImageView>
+      <CheckBox fx:id="coke" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="152.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" />
+      <CheckBox fx:id="dietcoke" layoutX="149.0" layoutY="150.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" />
+      <CheckBox fx:id="cokezero" layoutX="246.0" layoutY="150.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" />
+      <CheckBox fx:id="fanta" layoutX="340.0" layoutY="150.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" />
+      <CheckBox fx:id="sprite" layoutX="428.0" layoutY="150.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" />
+      <Label layoutX="520.0" layoutY="97.0" prefHeight="74.0" prefWidth="432.0" style="-fx-background-color: pink;" text="You might like to add these drinks before ordering!" />
+      <ScrollPane layoutX="37.0" layoutY="208.0" prefHeight="392.0" prefWidth="368.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="392.0" prefWidth="341.0">
+               <children>
+                  <Label fx:id="l1" layoutX="8.0" layoutY="8.0" prefHeight="372.0" prefWidth="330.0" text="Label" />
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button layoutX="664.0" layoutY="208.0" mnemonicParsing="false" onAction="#Checkout" text="Order Now" />
+      <Label layoutX="657.0" layoutY="297.0" style="-fx-background-color: white;" text="Search Order" />
+      <TextField fx:id="t1" layoutX="592.0" layoutY="344.0" prefHeight="39.0" prefWidth="256.0" />
+      <Button layoutX="647.0" layoutY="404.0" mnemonicParsing="false" onAction="#changeLabel" text="Display Now" />
+   </children>
+</AnchorPane>

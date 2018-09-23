@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="549.0" prefWidth="1027.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment1_aaryaman_chaudhry.FXMLFood2Controller">
+   <children>
+      <ImageView fitHeight="734.0" fitWidth="1101.0" layoutX="-72.0" layoutY="-132.0" onMouseEntered="#updatePriceLabel" onMouseExited="#updatePriceLabel" onMouseMoved="#updateCaloriesLabel" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/back2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="5.0" layoutY="38.0" opacity="0.75" prefHeight="93.0" prefWidth="381.0" style="-fx-background-color: black;" text="Order Burger" textFill="WHITE">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="156.0" prefHeight="38.0" prefWidth="55.0" style="-fx-background-color: grey;" text="Size" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="202.0" prefHeight="38.0" prefWidth="139.0" style="-fx-background-color: grey;" text="Main Filling" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="small" layoutX="104.0" layoutY="162.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Small($5)" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="size" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="medium" layoutX="217.0" layoutY="162.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Medium($10)" textFill="WHITE" toggleGroup="$size" />
+      <RadioButton fx:id="large" layoutX="362.0" layoutY="162.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Large($15)" textFill="WHITE" toggleGroup="$size" />
+      <Label layoutX="203.0" layoutY="350.0" prefHeight="38.0" prefWidth="99.0" style="-fx-background-color: grey;" text="Onion" textFill="#fffefe">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="potato" layoutX="202.0" layoutY="208.0" mnemonicParsing="false" onAction="#fillingon" style="-fx-background-color: gray;" text="Potato($2)" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="fill" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="meme2" layoutX="331.0" layoutY="208.0" mnemonicParsing="false" onAction="#fillingon" style="-fx-background-color: gray;" text="Meat($6)" textFill="WHITE" toggleGroup="$fill" />
+      <Label layoutY="351.0" prefHeight="38.0" prefWidth="104.0" style="-fx-background-color: grey;" text="Lettuce" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="405.0" prefHeight="38.0" prefWidth="148.0" style="-fx-background-color: grey;" text="Cheese slice" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="279.0" opacity="0.82" prefHeight="65.0" prefWidth="173.0" style="-fx-background-color: black;" text="Addings" textFill="#fffbfb">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Button layoutX="411.0" mnemonicParsing="false" onAction="#show1" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: pink;" text="Go Home" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="611.0" mnemonicParsing="false" onAction="#show3" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: hotpink;" text="Order Pizza" textFill="#fffefe">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="812.0" mnemonicParsing="false" onAction="#show4" prefHeight="54.0" prefWidth="217.0" style="-fx-background-color: purple;" text="Order Milkshake" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="5.0" layoutY="540.0" mnemonicParsing="false" onAction="#add" prefHeight="57.0" prefWidth="246.0" style="-fx-background-color: black;" text="Add to Cart" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="263.0" layoutY="540.0" mnemonicParsing="false" onAction="#Checkout" prefHeight="60.0" prefWidth="246.0" style="-fx-background-color: black;" text="Checkout Now" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="203.0" layoutY="405.0" prefHeight="38.0" prefWidth="99.0" style="-fx-background-color: grey;" text="Tomato" textFill="#fffefe">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" opacity="0.56" style="-fx-background-color: black; -fx-font-weight: bold;" text="Ramsay's Kitchen" textFill="#00bcdd">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/512.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="lettuce" layoutX="104.0" layoutY="350.0" mnemonicParsing="false" onAction="#lettuceon" prefHeight="38.0" prefWidth="33.0" style="-fx-background-color: grey;" />
+      <CheckBox fx:id="cheese" layoutX="149.0" layoutY="405.0" mnemonicParsing="false" onAction="#cheeseon" prefHeight="38.0" prefWidth="33.0" style="-fx-background-color: grey;" />
+      <CheckBox fx:id="onion" layoutX="301.0" layoutY="350.0" mnemonicParsing="false" onAction="#onionon" prefHeight="38.0" prefWidth="33.0" style="-fx-background-color: grey;" />
+      <CheckBox fx:id="tomato" layoutX="301.0" layoutY="405.0" mnemonicParsing="false" onAction="#tomatoon" prefHeight="38.0" prefWidth="33.0" style="-fx-background-color: grey;" />
+      <Label fx:id="t1" alignment="CENTER" layoutX="825.0" layoutY="75.0" prefHeight="65.0" prefWidth="67.0" style="-fx-background-color: white;" text="1" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="891.0" layoutY="80.0" mnemonicParsing="false" onAction="#quantitySubtract" prefHeight="60.0" prefWidth="55.0" style="-fx-font-weight: bold;" text="-">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="650.0" layoutY="78.0" prefHeight="60.0" prefWidth="122.0" style="-fx-background-color: black;" text="Quantity" textFill="#f5f5f5">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="772.0" layoutY="79.0" mnemonicParsing="false" onAction="#quantityAdd" prefHeight="59.0" prefWidth="55.0" style="-fx-font-weight: bold;" text="+">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label fx:id="label1" alignment="CENTER" layoutX="852.0" layoutY="548.0" prefHeight="45.0" prefWidth="177.0" style="-fx-background-color: black; -fx-text-fill: Chartreuse;" text="\$0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="662.0" layoutY="548.0" prefHeight="45.0" prefWidth="189.0" style="-fx-background-color: white;" text="Price for 1 Burger">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <StackPane layoutX="692.0" layoutY="202.0" prefHeight="266.0" prefWidth="296.0">
+         <children>
+            <ImageView fitHeight="267.0" fitWidth="296.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/burger.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgfilling" fitHeight="266.0" fitWidth="296.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/advance3/filling.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imglettuce" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/advance3/lettuce.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgonion" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/advance3/onion.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgtomato" fitHeight="269.0" fitWidth="291.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/advance3/tomato.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgcheese" fitHeight="268.0" fitWidth="290.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/advance3/cheese.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Label layoutX="657.0" layoutY="153.0" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: white;" text="Calories in 1 Burger">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" alignment="CENTER" layoutX="858.0" layoutY="153.0" prefHeight="45.0" prefWidth="177.0" style="-fx-background-color: black; -fx-text-fill: Chartreuse;" text="0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

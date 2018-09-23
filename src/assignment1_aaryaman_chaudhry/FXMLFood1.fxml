@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onMouseClicked="#updatePriceLabel" onMouseMoved="#updatePriceLabel" snapToPixel="false" stylesheets="@css1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment1_aaryaman_chaudhry.FXMLFood1Controller">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="1068.0" onMouseEntered="#updatePriceLabel" onMouseExited="#updateCaloriesLabel" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/i1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutY="38.0" opacity="0.82" prefHeight="99.0" prefWidth="394.0" style="-fx-background-color: black;" text="Order Pizza" textFill="#fffbfb">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="156.0" prefHeight="38.0" prefWidth="55.0" style="-fx-background-color: orange;" text="Size">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="202.0" prefHeight="38.0" prefWidth="99.0" style="-fx-background-color: orange;" text="Veggies">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="small" layoutX="104.0" layoutY="162.0" mnemonicParsing="false" style="-fx-background-color: orange;" text="Small($5)">
+         <toggleGroup>
+            <ToggleGroup fx:id="size" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="medium" layoutX="217.0" layoutY="162.0" mnemonicParsing="false" style="-fx-background-color: orange;" text="Medium($10)" toggleGroup="$size" />
+      <RadioButton fx:id="large" layoutX="362.0" layoutY="162.0" mnemonicParsing="false" style="-fx-background-color: orange;" text="Large($15)" toggleGroup="$size" />
+      <Label layoutX="29.0" layoutY="387.0" prefHeight="38.0" prefWidth="159.0" style="-fx-background-color: orange;" text="Extra Cheese">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="265.0" layoutY="387.0" prefHeight="38.0" prefWidth="122.0" style="-fx-background-color: orange;" text="Pineapple">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="337.0" prefHeight="38.0" prefWidth="81.0" style="-fx-background-color: orange;" text="Crust">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="thin" layoutX="108.0" layoutY="337.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="81.0" style="-fx-background-color: orange;" text="Thin">
+         
+         <toggleGroup>
+            <ToggleGroup fx:id="crust" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="thick" layoutX="181.0" layoutY="337.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="81.0" style="-fx-background-color: orange;" text="Thick" toggleGroup="$crust">
+         
+      </RadioButton>
+      <Label layoutX="307.0" layoutY="337.0" prefHeight="38.0" prefWidth="74.0" style="-fx-background-color: orange;" text="Meat">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="260.0" opacity="0.82" prefHeight="44.0" prefWidth="237.0" style="-fx-background-color: black;" text="Toppings" textFill="#fffbfb">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Button layoutX="485.0" layoutY="8.0" mnemonicParsing="false" onAction="#show1" prefHeight="60.0" prefWidth="167.0" style="-fx-background-color: black;" stylesheets="@css1.css" text="Go Home" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="652.0" layoutY="8.0" mnemonicParsing="false" onAction="#show3" prefHeight="60.0" prefWidth="197.0" style="-fx-background-color: hotpink;" text="Order Burger" textFill="#fffefe">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="849.0" layoutY="8.0" mnemonicParsing="false" onAction="#show4" prefHeight="60.0" prefWidth="219.0" style="-fx-background-color: purple;" text="Order Milkshake" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="43.0" layoutY="444.0" mnemonicParsing="false" onAction="#add" prefHeight="60.0" prefWidth="212.0" style="-fx-background-color: black;" styleClass="add" stylesheets="@style.css" text="Add to Cart" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="271.0" layoutY="445.0" mnemonicParsing="false" onAction="#Checkout" snapToPixel="false" style="-fx-background-color: black;" text="Checkout Now" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <CheckBox fx:id="meat" alignment="CENTER" layoutX="381.0" layoutY="337.0" mnemonicParsing="false" onAction="#pepperon" prefHeight="38.0" prefWidth="33.0" style="-fx-background-color: orange;" />
+      <CheckBox fx:id="meme" layoutX="184.0" layoutY="387.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: orange;" />
+      <CheckBox fx:id="pineapple" layoutX="387.0" layoutY="387.0" mnemonicParsing="false" onAction="#pineappleon" prefHeight="38.0" prefWidth="33.0" style="-fx-background-color: orange;" />
+      <Label opacity="0.56" prefHeight="38.0" prefWidth="167.0" style="-fx-background-color: black; -fx-font-weight: bold;" text="Ramsay's Kitchen" textFill="#00bcdd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="50.0" layoutX="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/512.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="tomato" layoutX="141.0" layoutY="208.0" mnemonicParsing="false" onAction="#tomatoon" style="-fx-background-color: orange;" text="Tomato ($1)" />
+      <CheckBox fx:id="capsicum" layoutX="272.0" layoutY="208.0" mnemonicParsing="false" onAction="#capsicumon" style="-fx-background-color: orange;" text="Capsicum($1)" />
+      <CheckBox fx:id="mushroom" layoutX="414.0" layoutY="208.0" mnemonicParsing="false" onAction="#mushroomon" style="-fx-background-color: orange;" text="Mushroom($1)" />
+      <CheckBox fx:id="olives" layoutX="564.0" layoutY="208.0" mnemonicParsing="false" onAction="#oliveon" style="-fx-background-color: orange;" text="Olives ($1)" />
+      <Button layoutX="855.0" layoutY="88.0" mnemonicParsing="false" onAction="#quantityAdd" prefHeight="59.0" prefWidth="55.0" style="-fx-font-weight: bold;" text="+">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="733.0" layoutY="87.0" prefHeight="60.0" prefWidth="122.0" style="-fx-background-color: black;" text="Quantity" textFill="#f5f5f5">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="973.0" layoutY="87.0" mnemonicParsing="false" onAction="#quantitySubtract" prefHeight="59.0" prefWidth="55.0" style="-fx-font-weight: bold;" text="-">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label text="Label" />
+      <Label fx:id="t1" alignment="CENTER" layoutX="910.0" layoutY="84.0" prefHeight="65.0" prefWidth="67.0" style="-fx-background-color: white;" text="1" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="692.0" layoutY="462.0" prefHeight="45.0" prefWidth="189.0" style="-fx-background-color: white;" text="Price for 1 Pizza">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" alignment="CENTER" layoutX="882.0" layoutY="462.0" prefHeight="45.0" prefWidth="177.0" style="-fx-background-color: black; -fx-text-fill: Chartreuse;" text="\$0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <StackPane layoutX="751.0" layoutY="233.0" prefHeight="199.0" prefWidth="248.0">
+         <children>
+            <ImageView fitHeight="222.0" fitWidth="247.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/woodboard.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="206.0" fitWidth="244.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/advance2/pizza.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgcapsicum" fitHeight="208.0" fitWidth="248.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/advance2/capsicum.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgmushroom" fitHeight="204.0" fitWidth="245.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/advance2/mushroom.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgtomato" fitHeight="213.0" fitWidth="247.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/advance2/tomato.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgolive" fitHeight="204.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/advance2/olives.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgpepper" fitHeight="206.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/advance2/pepperoni.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgpineapple" fitHeight="198.0" fitWidth="244.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/advance2/pineapple.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Label fx:id="label2" alignment="CENTER" layoutX="882.0" layoutY="186.0" prefHeight="45.0" prefWidth="177.0" style="-fx-background-color: black; -fx-text-fill: Chartreuse;" text="0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="692.0" layoutY="186.0" prefHeight="45.0" prefWidth="189.0" style="-fx-background-color: white;" text="Calories in 1 Pizza">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="556.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment1_aaryaman_chaudhry.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="594.0" fitWidth="1044.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/back.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="196.0" layoutY="56.0" opacity="0.56" prefHeight="109.0" prefWidth="500.0" style="-fx-background-color: black; -fx-font-weight: bold;" text="Ramsay's Kitchen" textFill="#00bcdd">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Button fx:id="orderpizza" layoutX="82.0" layoutY="491.0" mnemonicParsing="false" onAction="#show2" prefHeight="79.0" prefWidth="246.0" style="-fx-background-color: pink;" text="Order Pizza" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="383.0" layoutY="491.0" mnemonicParsing="false" onAction="#show3" prefHeight="79.0" prefWidth="246.0" style="-fx-background-color: hotpink;" text="Order Burger" textFill="#fffefe">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="676.0" layoutY="491.0" mnemonicParsing="false" onAction="#show4" prefHeight="79.0" prefWidth="246.0" style="-fx-background-color: purple;" text="Order Milkshake" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="257.0" layoutY="369.0" opacity="0.62" prefHeight="72.0" prefWidth="476.0" style="-fx-background-color: black; -fx-opacity: 0.5; -fx-font-family: arial; -fx-font-weight: bold;" text="Dear Customer, Click any of buttons below to order ;)" textFill="#03ff60">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="703.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

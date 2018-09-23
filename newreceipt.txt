@@ -1,0 +1,98 @@
+            Ramsay's Kitchen            
+            69,Heaven Road            
+                  MARS                   
+**************************************
+
+            Order No            5	Medium  PIZZA	$2170
+> Tomato
+> Capsicum
+> Mushroom
+> Olives
+> Thick
+> Extra Cheese
+> Meat
+> Pineapple
+Calories	820
+5	Medium  PIZZA	$2170
+> Tomato
+> Capsicum
+> Mushroom
+> Olives
+> Thick
+> Extra Cheese
+> Meat
+> Pineapple
+Calories	1230
+
+
+**************************************
+Subtotal                      $2660
+Tax                             $372.4
+Grand Total                $3032.4
+
+            Ramsay's Kitchen            
+            69,Heaven Road            
+                  MARS                   
+**************************************
+
+Order No            1	Medium  PIZZA	$13
+> Tomato
+> Capsicum
+> Mushroom
+> Thick
+> Extra Cheese
+> Meat
+Calories	380
+
+
+**************************************
+Subtotal                      $13
+Tax                             $1.82
+Grand Total                $14.82
+
+            Ramsay's Kitchen            
+            69,Heaven Road            
+                  MARS                   
+**************************************
+
+Order No            1	Medium  PIZZA	$26
+> Tomato
+> Capsicum
+> Mushroom
+> Thick
+> Extra Cheese
+> Meat
+Calories	760
+1	Small  BURGER	$7
+> Potato Fill
+> Tomato  
+> Onions
+> Lettuce
+
+
+**************************************
+Subtotal                      $46
+Tax                             $6.44
+Grand Total                $52.44
+
+            Ramsay's Kitchen            
+            69,Heaven Road            
+                  MARS                   
+**************************************
+
+Order No            11	Large  PIZZA	$209
+> Tomato
+> Capsicum
+> Mushroom
+> Olives
+> Thick
+> Extra Cheese
+> Meat
+> Pineapple
+Calories	560
+
+
+**************************************
+Subtotal                      $209
+Tax                             $29.26
+Grand Total                $238.26
